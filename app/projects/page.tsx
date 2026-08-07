@@ -1,126 +1,103 @@
-"use client"
-import Link from "next/link"
-
-const projects = [
-  {
-    title: "eShop - Full Stack E-Commerce Platform",
-    description: "A full-stack e-commerce platform built for the Kenyan market. Features M-Pesa STK Push payments, product variants, cart management, order tracking, and a full admin panel.",
-    href: "https://your-eshop-url.vercel.app",
-    status: "Live",
-    features: [
-      "M-Pesa STK Push integration",
-      "Product variants & inventory",
-      "Cart & checkout flow",
-      "Admin product management",
-      "Order management",
-      "JWT Authentication",
-    ],
-  },
-]
+import Image from "next/image";
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export default function ProjectsPage() {
   return (
-    <section style={{ padding: "7rem 2rem 5rem", maxWidth: "1100px", margin: "0 auto" }}>
-      <p style={{
-        fontSize: "0.7rem", fontWeight: 500, letterSpacing: "2px",
-        textTransform: "uppercase", color: "#00c9ff", marginBottom: "1rem",
-      }}>
-        Our work
-      </p>
-      <h1 style={{
-        fontFamily: "'Syne', sans-serif",
-        fontSize: "clamp(2rem, 5vw, 3.5rem)",
-        fontWeight: 800, letterSpacing: "-2px",
-        color: "#e8eeff", marginBottom: "1rem",
-      }}>
-        Projects
-      </h1>
-      <p style={{
-        color: "#8892b0", fontSize: "1rem", fontWeight: 300,
-        lineHeight: 1.8, maxWidth: "520px", marginBottom: "4rem",
-      }}>
-        Real-world solutions we've built - from e-commerce platforms to payment integrations.
-      </p>
+    <main className="min-h-screen bg-[#050505] text-white">
+      {/* Hero */}
+      <section className="px-6 pb-20 pt-32 md:px-12 lg:px-20 lg:pb-28 lg:pt-40">
+        <div className="mx-auto max-w-7xl">
+          <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-[#b7ff3c]">
+            Our Work
+          </p>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-        {projects.map((project) => (
-          <div
-            key={project.title}
-            style={{
-              background: "#080d26",
-              border: "0.5px solid rgba(0,201,255,0.15)",
-              borderRadius: "16px",
-              padding: "2.5rem",
-              transition: "border-color 0.2s",
-            }}
-            onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(0,201,255,0.4)")}
-            onMouseLeave={e => (e.currentTarget.style.borderColor = "rgba(0,201,255,0.15)")}
-          >
-            <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem", marginBottom: "1rem" }}>
-              <h2 style={{
-                fontFamily: "'Syne', sans-serif",
-                fontSize: "1.3rem", fontWeight: 700,
-                color: "#e8eeff", letterSpacing: "-0.5px",
-              }}>
-                {project.title}
+          <h1 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-6xl lg:text-7xl">
+            Projects
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60 md:text-xl">
+            Selected digital solutions we've designed and developed
+            for real-world use cases.
+          </p>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="px-6 pb-24 md:px-12 lg:px-20">
+        <div className="mx-auto max-w-7xl">
+          {projects.length === 0 ? (
+            <div className="rounded-3xl border border-white/10 bg-white/[0.03] px-8 py-20 text-center">
+              <h2 className="text-2xl font-semibold">
+                Projects coming soon
               </h2>
-              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{
-                  width: 8, height: 8, borderRadius: "50%",
-                  background: "#22c55e", display: "inline-block",
-                }} />
-                <span style={{ fontSize: "0.75rem", color: "#22c55e", fontWeight: 500 }}>
-                  {project.status}
-                </span>
-              </div>
+
+              <p className="mx-auto mt-3 max-w-md text-white/50">
+                We're currently building our portfolio of selected
+                projects and case studies.
+              </p>
             </div>
+          ) : (
+            <div className="grid gap-10 md:grid-cols-2">
+              {projects.map((project) => (
+                <article key={project.slug} className="group">
+                  {/* Image */}
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="relative block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]"
+                  >
+                    <div className="relative aspect-[16/10]">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  </Link>
 
-            <p style={{
-              color: "#8892b0", fontSize: "0.95rem",
-              lineHeight: 1.8, marginBottom: "1.5rem", fontWeight: 300,
-            }}>
-              {project.description}
-            </p>
+                  {/* Content */}
+                  <div className="pt-6">
+                    <p className="text-sm font-medium text-[#b7ff3c]">
+                      {project.category}
+                    </p>
 
-            {/* Features */}
-            <ul style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-              gap: "0.5rem",
-              paddingLeft: "1.1rem",
-              marginBottom: "1.75rem",
-            }}>
-              {project.features.map((f) => (
-                <li key={f} style={{ fontSize: "0.875rem", color: "#8892b0", lineHeight: 1.8 }}>
-                  {f}
-                </li>
+                    <h2 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">
+                      {project.title}
+                    </h2>
+
+                    <p className="mt-3 max-w-xl leading-7 text-white/55">
+                      {project.description}
+                    </p>
+
+                    {/* Technologies */}
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {project.technologies.map((technology) => (
+                        <span
+                          key={technology}
+                          className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/60"
+                        >
+                          {technology}
+                        </span>
+                      ))}
+                    </div>
+
+                    <Link
+                      href={`/projects/${project.slug}`}
+                      className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white transition hover:text-[#b7ff3c]"
+                    >
+                      View Case Study
+                      <span className="transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                  </div>
+                </article>
               ))}
-            </ul>
-
-
-
-            {/* CTA */}
-
-            <Link
-            
-              href={project.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-block",
-                padding: "0.65rem 1.5rem",
-                background: "#00c9ff",
-                color: "#0a0f2e",
-                borderRadius: "6px",
-                fontSize: "0.875rem", fontWeight: 500,
-                textDecoration: "none",
-              }}
-              >
-              View Project
-            </Link>
-          </div>
-        ))}
-      </div>
-    </section>
-  )
+            </div>
+          )}
+        </div>
+      </section>
+    </main>
+  );
 }

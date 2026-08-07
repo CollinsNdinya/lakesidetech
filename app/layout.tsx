@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LakesideTech",
     description: "Fast, secure web solutions that scale.",
-    url: "https://lakesidetech.com",
+    url: "https://lakesidetech.co.ke",
     siteName: "LakesideTech",
     type: "website",
   },

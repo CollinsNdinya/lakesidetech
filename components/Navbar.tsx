@@ -10,7 +10,8 @@ export default function Navbar() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
-    { label: "Projects", href: "/projects" },
+    { label: "Products", href: "/products" },
+    // { label: "Projects", href: "/projects" },
     { label: "Contact", href: "/contact" },
   ]
 
