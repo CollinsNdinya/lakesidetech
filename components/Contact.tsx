@@ -94,7 +94,7 @@ export default function Contact() {
           {[
             { emoji: "💬", label: "WhatsApp", href: "https://wa.me/254737847921", text: "+254 737 847 921" },
             { emoji: "✉️", label: "Email", href: "mailto:lakesidetech25@gmail.com", text: "lakesidetech25@gmail.com" },
-            { emoji: "🌐", label: "Website", href: "https://lakesidetech.co.ke", text: "lakesidetech.vercel.app" },
+            { emoji: "🌐", label: "Website", href: "https://lakesidetech.co.ke", text: "lakesidetech.co.ke" },
           ].map(({ emoji, label, href, text }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer" style={{
               display: "flex", alignItems: "center", gap: "10px",

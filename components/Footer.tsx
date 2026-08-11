@@ -46,10 +46,10 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: WhatsApp, href: "https://wa.me/254737847921", label: "WhatsApp", color: "#25d366" },
-    { icon: Instagram, href: "https://instagram.com/lakesidetech", label: "Instagram", color: "#e1306c" },
-    { icon: Facebook, href: "https://facebook.com/lakesidetech", label: "Facebook", color: "#1877f2" },
-    { icon: TwitterX, href: "https://twitter.com/lakesidetech", label: "X (Twitter)", color: "#e8eeff" },
-    { icon: LinkedIn, href: "https://linkedin.com/company/lakesidetech", label: "LinkedIn", color: "#0a66c2" },
+    { icon: Instagram, href: "https://instagram.com/lakeside.tech", label: "Instagram", color: "#e1306c" },
+    { icon: Facebook, href: "https://www.facebook.com/share/1BXdtf89p4/", label: "Facebook", color: "#1877f2" },
+    { icon: TwitterX, href: "https://x.com/_lakesidetech", label: "X (Twitter)", color: "#e8eeff" },
+    // { icon: LinkedIn, href: "https://linkedin.com/company/lakesidetech", label: "LinkedIn", color: "#0a66c2" },
   ]
 
   const navLinks = [
@@ -65,7 +65,7 @@ export default function Footer() {
     "Web Development",
     "SEO Optimization",
     "Payment Integration",
-    "Graphic Design",
+    // "Graphic Design",
     "Maintenance & Support",
   ]
 
@@ -211,7 +211,7 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
               {[
                 { label: "+254 737 847 921", href: "https://wa.me/254737847921" },
-                { label: "hello@lakesidetech.com", href: "mailto:hello@lakesidetech.com" },
+                { label: "lakesidetech25@gmail.com", href: "mailto:lakesidetech25@gmail.com" },
                 { label: "Nairobi, Kenya", href: "#" },
               ].map(({ label, href }) => (
                 <a key={label} href={href} style={{
@@ -243,8 +243,8 @@ export default function Footer() {
           </p>
           <p style={{ fontSize: "0.8rem", color: "#8892b0" }}>
             Built by{" "}
-            <a href="https://lakesidetech.vercel.app" style={{ color: "#00c9ff", textDecoration: "none" }}>
-              Collins Ndinya
+            <a href="https://lakesidetech.co.ke" style={{ color: "#00c9ff", textDecoration: "none" }}>
+              LakesideTECH
             </a>
           </p>
         </div>
