@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_KE",
     images: [
       {
-        url: "/og-image.png", // add a real 1200x630 image in /public
+        url: "/og-image.png", 
         width: 1200,
         height: 630,
         alt: "LakesideTech - Web & Payment Solutions",
