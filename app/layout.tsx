@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lakesidetech.co.ke"),
+  metadataBase: new URL("https://www.lakesidetech.co.ke"),
   title: {
     default: "LakesideTech | Web & Payment Solutions",
     template: "%s | LakesideTech",
@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://lakesidetech.co.ke",
+    canonical: "https://www.lakesidetech.co.ke",
   },
   openGraph: {
     title: "LakesideTech | Web & Payment Solutions",
     description: "Fast, secure web solutions that scale — websites, M-Pesa & card payment integration for Kenyan businesses.",
-    url: "https://lakesidetech.co.ke",
+    url: "https://www.lakesidetech.co.ke",
     siteName: "LakesideTech",
     type: "website",
     locale: "en_KE",
