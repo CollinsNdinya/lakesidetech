@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     icon: "/favicon.png",
   },
   verification: {
-    google: "your-google-search-console-verification-code", // from GSC once you add the site
+    google:"2qYgq0DNbHIoLTPLRfCAwicnjUM860chUME86s6KQNo",
   },
 }
 
