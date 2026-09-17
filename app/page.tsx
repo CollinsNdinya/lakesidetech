@@ -15,8 +15,8 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "LakesideTech",
-            url: "https://www.lakesidetech.co.ke",
-            logo: "https://www.lakesidetech.co.ke/logo.png",
+            url: "https://lakesidetech.co.ke",
+            logo: "https://lakesidetech.co.ke/logo.png",
             sameAs: [
               "https://twitter.com/_lakesidetech",
               "https://www.instagram.com/lakeside.tech",

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.lakesidetech.co.ke/sitemap.xml",
+    sitemap: "https://lakesidetech.co.ke/sitemap.xml",
   }
 }
