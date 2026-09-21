@@ -57,7 +57,7 @@ export default function Services() {
           Complete digital solutions - from visual branding to production-ready websites with payments.
         </p>
 
-      {/* Top row — 3 cards */}
+      {/* Top row - 3 cards */}
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
@@ -67,7 +67,7 @@ export default function Services() {
         {services.slice(0, 3).map((s) => <ServiceCard key={s.title} {...s} />)}
       </div>
 
-      {/* Bottom row — 2 cards */}
+      {/* Bottom row - 2 cards */}
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(2, 1fr)",

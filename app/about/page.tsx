@@ -3,8 +3,8 @@ import type { Metadata } from "next"
 
 const values = [
   { num: "01", title: "Continuous Learning", body: "We stay on top of current web technologies and actively expand our expertise to create more dynamic, interactive, and modern web applications." },
-  { num: "02", title: "Innovation", body: "We don't do cookie-cutter. Every project gets a tailored solution — designed to solve real-world problems with modern tools." },
-  { num: "03", title: "Client-First Approach", body: "We listen before we build. Your goals drive every decision — from design to deployment and ongoing support." },
+  { num: "02", title: "Innovation", body: "We don't do cookie-cutter. Every project gets a tailored solution - designed to solve real-world problems with modern tools." },
+  { num: "03", title: "Client-First Approach", body: "We listen before we build. Your goals drive every decision - from design to deployment and ongoing support." },
   { num: "04", title: "Quality Over Speed", body: "We move with urgency but never cut corners. Every line of code, every pixel, every integration is done right." },
 ]
 
@@ -39,10 +39,10 @@ export default function AboutPage() {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
               {[
-                "Welcome to LakesideTech — a creative and forward-thinking web development company committed to building clean, efficient, and user-friendly digital solutions. We specialize in full-stack development, transforming ideas into seamless online experiences.",
-                "In addition to development, we offer high-quality graphic design services to help elevate your brand's visual identity — from logos to full brand guidelines.",
+                "Welcome to LakesideTech - a creative and forward-thinking web development company committed to building clean, efficient, and user-friendly digital solutions. We specialize in full-stack development, transforming ideas into seamless online experiences.",
+                "In addition to development, we offer high-quality graphic design services to help elevate your brand's visual identity - from logos to full brand guidelines.",
                 "Our team is proficient in current web technologies and we're actively expanding our expertise to create more dynamic, interactive, and modern web applications.",
-                "At LakesideTech, we value continuous learning, innovation, and a client-first approach — always striving to deliver tailored solutions that meet real-world needs. Whether you're a startup, small business, or growing brand, we're here to help you build something amazing — one line of code at a time.",
+                "At LakesideTech, we value continuous learning, innovation, and a client-first approach - always striving to deliver tailored solutions that meet real-world needs. Whether you're a startup, small business, or growing brand, we're here to help you build something amazing - one line of code at a time.",
               ].map((para, i) => (
                 <p key={i} style={{ fontSize: "0.95rem", color: "#8892b0", lineHeight: 1.85, fontWeight: 300 }}>{para}</p>
               ))}

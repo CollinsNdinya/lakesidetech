@@ -2,12 +2,12 @@ const reasons = [
   {
     num: "01",
     title: "Built for Scale",
-    body: "Performance-driven websites and applications that grow with your business — from MVP to full-scale platforms.",
+    body: "Performance-driven websites and applications that grow with your business - from MVP to full-scale platforms.",
   },
   {
     num: "02",
     title: "Seamless Payment Integrations",
-    body: "Trusted payment gateways integrated with speed and security — smooth checkouts, subscriptions, and real-time transactions.",
+    body: "Trusted payment gateways integrated with speed and security - smooth checkouts, subscriptions, and real-time transactions.",
   },
   {
     num: "03",
@@ -17,7 +17,7 @@ const reasons = [
   {
     num: "04",
     title: "Startup-Focused Mindset",
-    body: "We move fast, iterate smart, and communicate clearly — helping you launch quickly without sacrificing quality.",
+    body: "We move fast, iterate smart, and communicate clearly - helping you launch quickly without sacrificing quality.",
   },
 ]
 

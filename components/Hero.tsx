@@ -12,7 +12,7 @@ export default function Hero() {
       gap: "4rem",
     }}>
 
-      {/* Left — text */}
+      {/* Left - text */}
       <div>
         <div style={{
           display: "inline-flex", alignItems: "center", gap: "8px",
@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right — mockup */}
+      {/* Right - mockup */}
       <div className="hero-visual" style={{
         position: "relative",
         display: "flex",
@@ -93,7 +93,7 @@ export default function Hero() {
           boxShadow: "0 0 40px rgba(56,189,248,0.5), 0 0 80px rgba(56,189,248,0.25), 0 20px 60px rgba(0,0,0,0.3)",
         }} />
 
-        {/* Small card — dark with bright cyan glow */}
+        {/* Small card - dark with bright cyan glow */}
         <div style={{
           width: "200px",
           height: "150px",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "LakesideTech | Web & Payment Solutions",
-    description: "Fast, secure web solutions that scale — websites, M-Pesa & card payment integration for Kenyan businesses.",
+    description: "Fast, secure web solutions that scale - websites, M-Pesa & card payment integration for Kenyan businesses.",
     url: "https://lakesidetech.co.ke",
     siteName: "LakesideTech",
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "LakesideTech | Web & Payment Solutions",
-    description: "Fast, secure web solutions that scale — websites, M-Pesa & card payment integration.",
+    description: "Fast, secure web solutions that scale - websites, M-Pesa & card payment integration.",
     images: ["/og-image.png"],
     site: "@_lakesidetech",
   },
